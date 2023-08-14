@@ -1,0 +1,59 @@
+
+using System;
+
+
+//ini adalah namespace yang berfungsi untuk tempat utama ke fungsi utama
+namespace DataTypesProgram
+{
+
+    //class program(sesuai dengan nama file) seperti pada Java
+    class Program
+    {
+        //ini adalah fungsi utama seperti Int Main pada C++
+        static void Main(string[] args)
+        {
+            Judul();
+
+            Console.WriteLine("1.) TIPE DATA INTEGER");
+            int data_integer = 0;
+            Console.WriteLine("Data     : " + data_integer);
+            Console.WriteLine("Bertipe  : " + data_integer.GetType() + "\n");//GetType untuk mengetahui fungsi tipe data variabel
+
+            Console.WriteLine("2.) TIPE DATA FLOAT");
+            double data_float = 6.08;
+            Console.WriteLine("Data     : " + data_float);
+            Console.WriteLine("Bertipe  : " + data_float.GetType() + "\n");
+
+            Console.WriteLine("3.) TIPE DATA STRING");
+            string data_string = "Ikko Cahya Awinata";
+            Console.WriteLine("Data     : " + data_string);
+            Console.WriteLine("Bertipe  : " + data_string.GetType() + "\n");
+
+            Console.WriteLine("4.) TIPE DATA BOOLEAN");
+            bool data_bool = true;
+            Console.WriteLine("Data     : " + data_bool);
+            Console.WriteLine("Bertipe  : " + data_bool.GetType() + "\n");
+
+
+            Console.WriteLine("5.) TIPE DATA CHAR");
+            char data_char = 'F';
+            Console.WriteLine("Data     : " + data_char);
+            Console.WriteLine("Bertipe  : " + data_bool.GetType() + "\n");
+
+
+
+            Console.WriteLine("6.) TIPE DATA ARRAY");
+            int[] data_array = {1,2,3,4,5};
+            Console.WriteLine("Data     : [" + string.Join(", ", data_array) + "]");//string join itu untuk menggabungkan data array menjadi satu
+            Console.WriteLine("Bertipe  : " + data_array.GetType() + "\n" );
+        }
+
+        static void Judul()
+        {
+            Console.WriteLine("=====================================================");
+            Console.WriteLine("              SELAMAT DATANG DI PROGRAM              ");
+            Console.WriteLine("                MENGETAHUI TIPE DATA                 ");
+            Console.WriteLine("=====================================================");
+        }
+    }
+}

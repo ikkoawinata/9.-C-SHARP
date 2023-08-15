@@ -1,0 +1,89 @@
+using System;
+
+namespace project{
+    class Program{
+
+        static void Table(){
+            Console.WriteLine("|                     PILIH OPERATOR                  |");
+            Console.WriteLine("===========================================================");
+            Console.WriteLine("1. |PENJUMLAHAN                                       |");
+            Console.WriteLine("2. |PENGURANGAN                                       |");
+            Console.WriteLine("3. |PERKALIAN                                         |");
+            Console.WriteLine("4. |PEMBAGIAN                                         |");
+            Console.WriteLine("5. |MODULUS                                           |");
+            Console.WriteLine("===========================================================");
+        }
+        static void Main(string[] args){
+            Console.WriteLine("===========================================================");
+            Console.WriteLine("    S E L A M A T   D A T A N G   D I  P R O G R A M");
+            Console.WriteLine("                 KALKULATOR SEDERHANA");
+            Console.WriteLine("                      BAHASA C#");
+            Console.WriteLine("============================================================");
+
+            Table();
+
+            int a = 0;
+            int b = 0;
+            int masukan = 0;
+            string j = " ";
+            int hasil = 0;
+
+
+
+do{
+        Console.WriteLine("Masukkan angka pertama : ");
+        a = int.Parse(Console.ReadLine());
+        Console.WriteLine("Masukkan angka pertama : ");
+        b = int.Parse(Console.ReadLine());
+
+           Console.WriteLine("Masukkan pilihan untuk operator matemtika pada tabel : ");
+        masukan = int.Parse(Console.ReadLine());
+
+        switch (masukan){
+            case 1:
+            Console.WriteLine("--- PENJUMLAHAN ---");
+            hasil = a + b;
+            Console.WriteLine("hasil dari penjumlahan " + a + " + " + b + " = " + hasil);
+            break;
+
+
+            case 2 :
+            Console.WriteLine("--- PENGURANGAN ---");
+            hasil = a - b;
+            Console.WriteLine("hasil dari pengurangan  " + a + " - " + b + " = " + hasil);
+            break;
+
+
+             case 3 :
+            Console.WriteLine("--- PERKALIAN ---");
+            hasil = a * b;
+            Console.WriteLine("hasil dari pengurangan  " + a + " * " + b + " = " + hasil);
+            break;
+
+
+
+
+             case 4 :
+            Console.WriteLine("--- PEMBAGIAN ---");
+            hasil = a / b;
+            Console.WriteLine("hasil dari pengurangan  " + a + " / " + b + " = " + hasil);
+            break;
+
+
+             case 5 :
+            Console.WriteLine("--- MODULUS ---");
+            hasil = a / b;
+            Console.WriteLine("hasil dari pengurangan  " + a + " % " + b + " = " + hasil);
+            break;
+            
+        }
+        Console.WriteLine("ingin coba program lagi ? [Y/N] : ");
+        j  =Console.ReadLine();
+        }
+        while (j == "Y" || j == "y");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("Made by ikkoc_awinata");
+    }
+}
+}

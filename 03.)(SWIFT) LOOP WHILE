@@ -1,0 +1,26 @@
+using System;
+
+namespace Program{
+    class While{
+        static void tabel(){
+            Console.WriteLine("=================================================================");
+            Console.WriteLine("     S E L A M A T   D A T A N G    D I  P R O G R A M");
+            Console.WriteLine("                 PERULANGAN ( LOOP WHILE )");
+            Console.WriteLine("                         BAHASA C#");
+            Console.WriteLine("=================================================================");
+        }
+
+
+        static void Main(string[] args){
+            tabel();
+
+
+            int n = 0;
+
+            while (n <= 5){
+                Console.WriteLine(n + " . I WANNA BE YOURS");
+                n += 1;
+            }
+        }
+    }
+}

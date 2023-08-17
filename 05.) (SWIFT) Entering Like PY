@@ -1,0 +1,29 @@
+
+using System.Reflection.Emit;
+using System.Data;
+using System;
+
+namespace enteringlikepy{
+    class Program{
+        static void welcome(){
+            Console.WriteLine("==============================================================");
+            Console.WriteLine("      S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("                    ENTERING LIKE PY");
+            Console.WriteLine("                       BAHASA C#");
+            Console.WriteLine("==============================================================");
+        }
+
+
+
+
+        static void Main(string[] args){
+            welcome();
+            string j = " ";
+            Console.WriteLine("Enter untuk lanjut");
+            j = Console.ReadLine();
+            Console.WriteLine("Terima kasih telah Tekan Enter");
+        }
+
+    }
+    
+}

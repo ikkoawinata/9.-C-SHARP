@@ -1,0 +1,41 @@
+using System;
+
+namespace bandingnilai{
+    class Program{
+        static void tabel(){
+            Console.WriteLine("================================================================");
+            Console.WriteLine("       S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("     MEMBANDINGKAN NILAI INTEGER DAN MENGELUARKAN NOTE ");
+            Console.WriteLine("                          BAHASA C#");
+            Console.WriteLine("================================================================");
+        }
+
+        static void Main(string[] args){
+            int a = 0, b = 0;
+            string j = " ";
+        tabel();
+
+
+            do{
+            Console.WriteLine("Masukkan nilai integer A : ");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan nilai integer B : ");
+            b = int.Parse(Console.ReadLine());
+            Console.WriteLine();
+
+            if (a > b){
+                Console.WriteLine("Nilai A lebih besar dari nilai B ");
+            }else if ( a < b ){
+                Console.WriteLine("Nilai A lebih kecil dari nilai B ");
+            }else if ( a == b){
+                Console.WriteLine("Nilai A dan B sama besar");
+            }
+            Console.WriteLine();
+            Console.WriteLine("Ingin coba program lagi ? [Y/N] : "  );
+            j = Console.ReadLine();
+        }while ( j == " Y" || j == "y");
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("made by ikkoc_awinata");
+    }
+}
+}

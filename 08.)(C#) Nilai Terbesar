@@ -1,0 +1,45 @@
+
+using System;
+
+namespace nilaiterbesar{
+    class Program{
+        static void welcome(){
+            Console.WriteLine("=======================================================================");
+            Console.WriteLine("         S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("                   MENCARI NILAI TERBESAR");
+            Console.WriteLine("                           BAHASA C#");
+            Console.WriteLine("=======================================================================");
+        }
+            static void Main(string[] args) {
+            welcome();
+            int a = 0, b = 0, c = 0, maks = 0;
+            string j = " ";
+
+
+            do{
+            Console.WriteLine("msukkan nilai a : ");
+            a = int.Parse(Console.ReadLine());
+            Console.WriteLine("msukkan nilai b : ");
+            b = int.Parse(Console.ReadLine());
+            Console.WriteLine("msukkan nilai c : ");
+            c = int.Parse(Console.ReadLine());
+
+            Console.WriteLine();
+            if( a > b){
+                maks = a;
+            }else{ 
+                maks = b;
+            }if (c > maks){
+                maks = c;
+            }
+            Console.WriteLine("jadi nilai terbesarnya adalah = " + maks);
+            Console.WriteLine("ingin coba program lagi ? [Y/N]");
+            j = Console.ReadLine();
+    }
+    while ( j == "y" || j == " Y");
+    Console.WriteLine();
+    Console.WriteLine("Terima kasih telah menggunakan program ini");
+    Console.WriteLine("made by ikkoc_awinata");
+    }
+}
+}

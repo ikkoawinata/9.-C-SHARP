@@ -1,0 +1,527 @@
+using System;
+
+namespace rumus{
+    class Program{
+
+
+        static void welcome(){
+            Console.WriteLine("===========================================================");
+            Console.WriteLine("   S E L A M A T  D A T A N G  D I  P R O G R A M ");
+            Console.WriteLine("     KUMPULAN RUMUS LUAS  PERMUKAAN DAN VOLUME");
+            Console.WriteLine("                      BAHASA C#");
+            Console.WriteLine("===========================================================");
+        }
+
+
+        static void tabel(){
+                Console.WriteLine("================================================================================");
+    Console.WriteLine("A. R U M U S  K E L I L I N G  &  L U A S  B A N G U N  D A T A R\t\t");
+    Console.WriteLine("================================================================================");
+    Console.WriteLine("1. | Menghitung Keliling Lingkaran (JARI-JARI) (phi = 22/7)\t|");
+    Console.WriteLine("2. | Menghitung Keliling Lingkaran (DIAMETER) (phi = 22/7)\t|");
+    Console.WriteLine("3. | Menghitung Keliling Lingkaran (JARI-JARI) (phi = 3,14)\t|");
+    Console.WriteLine("4. | Menghitung Keliling Lingkaran (DIAMETER) (phi = 3,14)\t|");
+    Console.WriteLine("5. | Menghitung Panjang Busur pada Lingkaran\t\t\t|");
+    Console.WriteLine("6. | Menghitung Keliling Persegi\t\t\t\t|");
+    Console.WriteLine("7. | Menghitung Luas Persegi\t\t\t\t|");
+    Console.WriteLine("8. | Menghitung Keliling Persegi Panjang\t\t\t|");
+    Console.WriteLine("9. | Menghitung Luas Persegi Panjang\t\t\t\t|");
+    Console.WriteLine("10.| Menghitung Keliling Jajar Genjang\t\t\t|");
+    Console.WriteLine("11.| Menghitung Luas Jajar Genjang\t\t\t\t|");
+    Console.WriteLine("12.| Menghitung Keliling Segitiga\t\t\t\t|");
+    Console.WriteLine("13.| Menghitung Luas Segitiga\t\t\t\t|");
+    Console.WriteLine("14.| Menghitung Luas Belah Ketupat\t\t\t\t|");
+    Console.WriteLine("15.| Menghitung Luas Trapesium\t\t\t\t|");
+    Console.WriteLine("==============================================================================");
+    Console.WriteLine("B. R U M U S  L U A S  P E R M U K A A N  &  V O L U M E  B A N G U N  R U A N G");
+    Console.WriteLine("==============================================================================");
+    Console.WriteLine("16.| Menghitung Luas Kubus\t\t\t\t\t|");
+    Console.WriteLine("17.| Menghitung Volume Kubus\t\t\t\t\t|");
+    Console.WriteLine("18.| Menghitung Luas Balok\t\t\t\t\t|");
+    Console.WriteLine("19.| Menghitung Volume Balok\t\t\t\t\t|");
+    Console.WriteLine("20.| Menghitung Luas Permukaan Limas Segiempat\t\t\t|");
+    Console.WriteLine("21.| Menghitung Volume Limas Segiempat\t\t\t\t|");
+    Console.WriteLine("22.| Menghitung Volume Prisma Segitiga\t\t\t\t|");
+    Console.WriteLine("23.| Menghitung Luas Prisma Segitiga\t\t\t\t|");
+    Console.WriteLine("24.| Menghitung Volume Limas Segitiga\t\t\t\t|");
+    Console.WriteLine("25.| Menghitung Luas Selimut Tabung (Jari-Jari)\t\t\t|");
+    Console.WriteLine("26.| Menghitung Luas Selimut Tabung (Diameter)\t\t\t|");
+    Console.WriteLine("27.| Menghitung Luas Permukaan Tabung (Jari-Jari)\t\t|");
+    Console.WriteLine("28.| Menghitung Volume Tabung (Jari-Jari)\t\t\t|");
+    Console.WriteLine("29.| Menghitung Luas Selimut Kerucut\t\t\t\t|");
+    Console.WriteLine("30.| Menghitung Luas Permukaan Kerucut\t\t\t\t|");
+    Console.WriteLine("31.| Menghitung Volume Kerucut\t\t\t\t\t|");
+    Console.WriteLine("32.| Menghitung Luas Bola\t\t\t\t\t|");
+    Console.WriteLine("33.| Menghitung Volume Bola\t\t\t\t\t|");
+    Console.WriteLine("==============================================================================");
+        }
+        static void Main(string[] args){
+            welcome();
+            tabel();
+            double pytagoras = 0,  pilihan = 0 , r = 0, keliling = 0, d = 0, t = 0, T= 0, rumusa = 0, rumusb = 0, luas = 0, a = 0;
+            string j = " ";
+
+
+
+        do{
+        Console.WriteLine("Silahkan pilih sesuai pada tabel : ");
+        pilihan = int.Parse(Console.ReadLine());
+        switch (pilihan){
+            case 1: 
+            Console.WriteLine("--- 1.) Menghitung Keliling Lingkaran (JARI-JARI) --- ");
+            Console.WriteLine("Masukkan Panjang jari-jari lingkaran : ");
+            r = int.Parse(Console.ReadLine());
+            keliling =  2 * 22.0/7.0 * r;
+            Console.WriteLine("  keliling =  2 * 22.0/7.0 * r ");
+            Console.WriteLine("keliling lingkaran dengan jari-jari " + r + " adalah " + keliling );
+            break;
+
+
+
+              case 2: 
+            Console.WriteLine("--- 2.) Menghitung Keliling Lingkaran (DIAMETER) --- ");
+            Console.WriteLine("Masukkan Panjang diameter lingkaran : ");
+            r = int.Parse(Console.ReadLine());
+            keliling =   22.0/7.0 * r;
+            Console.WriteLine(" keliling =   22.0/7.0 * r ");
+            Console.WriteLine("keliling lingkaran dengan jari-jari " + r + " adalah " + keliling );
+            break;
+
+
+               case 3: 
+            Console.WriteLine("--- 3.) Menghitung Keliling Lingkaran (JARI-JARI) --- ");
+            Console.WriteLine("Masukkan Panjang jari-jari lingkaran : ");
+            r = int.Parse(Console.ReadLine());
+            keliling =  2 * 3.14 * r;
+            Console.WriteLine("keliling =  2 * 3.14 * r ");
+            Console.WriteLine("keliling lingkaran dengan jari-jari " + r + " adalah " + keliling );
+            break;
+
+
+
+                case 4: 
+            Console.WriteLine("--- 4.) Menghitung Keliling Lingkaran (DIAMETER) --- ");
+            Console.WriteLine("Masukkan Panjang diameter lingkaran : ");
+            r = int.Parse(Console.ReadLine());
+            keliling =  3.14 * r;
+            Console.WriteLine("keliling =  3.14 * r ");
+            Console.WriteLine("keliling lingkaran dengan jari-jari " + r + " adalah " + keliling );
+            break;
+
+
+
+               case 5: 
+            Console.WriteLine("--- 5.) Menghitung Keliling Lingkaran (DIAMETER) --- ");
+            Console.WriteLine("Masukkan Panjang diameter lingkaran : ");
+            r = int.Parse(Console.ReadLine());
+            keliling =  3.14 * r;
+            Console.WriteLine("keliling =  3.14 * r;");
+            Console.WriteLine("keliling lingkaran dengan jari-jari " + r + " adalah " + keliling );
+            break;
+
+
+            
+               case 6: 
+            Console.WriteLine("--- 6.)  Menghitung Keliling Persegi --- ");
+            Console.WriteLine("Masukkan Panjang diameter lingkaran : ");
+            r = int.Parse(Console.ReadLine());
+            keliling =  4.0 * r; // 4 x sisi
+            Console.WriteLine("keliling =  4.0 * r; // 4 x sisi ");
+            Console.WriteLine("keliling lingkaran dengan jari-jari " + r + " adalah " + keliling );
+            break;
+
+
+
+                case 7: 
+            Console.WriteLine("--- 7.) Menghitung Luas Persegi --- ");
+            Console.WriteLine("Masukkan Panjang diameter lingkaran : ");
+            r = int.Parse(Console.ReadLine());
+            keliling =  r * r; // sisi x sisi
+            Console.WriteLine(" keliling =  r * r; // sisi x sisi  ");
+            Console.WriteLine("keliling lingkaran dengan jari-jari " + r + " adalah " + keliling );
+            break;
+
+
+
+                case 8: 
+            Console.WriteLine("--- 8.) Menghitung Keliling Persegi Panjang --- ");
+            Console.WriteLine("Masukkan Panjang sisi : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan lebar sisi : ");
+            d = int.Parse(Console.ReadLine());
+            keliling = 2 * (r + d);
+            Console.WriteLine(" keliling = 2 * (r + d)  ");
+            Console.WriteLine("Keliling Persegi Panjang dengan panjang " + r + " dan lebar " +  d + " adalah " +  keliling );
+            break;
+
+
+
+
+                 case 9: 
+            Console.WriteLine("--- 9.) Menghitung Luas Persegi Panjang --- ");
+            Console.WriteLine("Masukkan Panjang sisi : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan lebar sisi : ");
+            d = int.Parse(Console.ReadLine());
+            keliling = r * d;
+            Console.WriteLine(" Luas  = r * d  ");
+            Console.WriteLine("Keliling Persegi Panjang dengan panjang " + r + " dan lebar " +  d + " adalah " +  keliling );
+            break;
+
+
+
+                    case 10: 
+            Console.WriteLine("--- 10.) Menghitung Keliling Jajar Genjang --- ");
+            Console.WriteLine("Masukkan Panjang sisi : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan lebar sisi : ");
+            d = int.Parse(Console.ReadLine());
+            keliling = 2 * (r + d);
+            Console.WriteLine("keliling = 2 * (a + b) ");
+            Console.WriteLine("Keliling Persegi Panjang dengan panjang " + r + " dan lebar " +  d + " adalah " +  keliling );
+            break;
+
+
+
+                    case 11: 
+            Console.WriteLine("--- 11.) Menghitung Luas Jajar Genjang --- ");
+            Console.WriteLine("Masukkan Panjang alas : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi : ");
+            d = int.Parse(Console.ReadLine());
+            keliling = r * d ;
+            Console.WriteLine(" luas = a * t ");
+            Console.WriteLine("Keliling Persegi Panjang dengan panjang " + r + " dan lebar " +  d + " adalah " +  keliling );
+            break;
+
+
+            
+                case 12: 
+            Console.WriteLine("--- 12.) Menghitung Keliling Segitiga --- ");
+            Console.WriteLine("Masukkan Panjang alas : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi : ");
+            d = int.Parse(Console.ReadLine());
+            keliling = r * d * t ;
+            Console.WriteLine("  Luas = r + d + t = " + r + " + " + d + " + " + t + " = " + keliling);
+            break;
+
+
+
+                case 13: 
+            Console.WriteLine("--- 13.) Menghitung Luas Segitiga --- ");
+            Console.WriteLine("Masukkan Panjang alas : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi : ");
+            d = int.Parse(Console.ReadLine());
+            keliling = 0.5 * r * d;
+            Console.WriteLine(" luas = 1/2 * a * t = 1/2 " + r + " + " + d + " = " + keliling);
+            break;
+
+
+
+                  case 14: 
+            Console.WriteLine("--- 14.) Menghitung Luas Belah Ketupat --- ");
+            Console.WriteLine("Masukkan Panjang alas : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi : ");
+            d = int.Parse(Console.ReadLine());
+            keliling = 0.5 * r * d;
+            Console.WriteLine(" luas = 1/2 * a * t = 1/2 " + r + " + " + d + " = " + keliling);
+            break;
+
+
+
+                     case 15: 
+            Console.WriteLine("--- 15.) Menghitung Keliling Trapesium  --- ");
+            Console.WriteLine("Masukkan a: ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan b: ");
+            d = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan c : ");
+            t = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan d : ");
+            T = int.Parse(Console.ReadLine());
+            keliling = r + d + T + T;
+            Console.WriteLine("Keliling = a + b + c + d = " + r + " + " +  d + " + " + t + " + " + T + " = " + keliling);
+            break;
+
+
+
+                       case 16: 
+            Console.WriteLine("--- 16.) Menghitung Luas Trapesium  --- ");
+            Console.WriteLine("Masukkan a: ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan b: ");
+            d = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan c : ");
+            t = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan d : ");
+            T = int.Parse(Console.ReadLine());
+            keliling = r + d + T + T;
+            Console.WriteLine("Keliling = a + b + c + d = " + r + " + " +  d + " + " + t + " + " + T + " = " + keliling);
+            break;
+
+
+
+                      case 17: 
+            Console.WriteLine("--- 17.) MENGHITUNG VOLUME KUBUS --- ");
+            Console.WriteLine("Masukkan a: ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan b: ");
+            keliling = Math.Pow(r,3);// diawali dengan huruf kapital
+            Console.WriteLine("Volume kubus dengnan rusuk " + r + " adalah " + keliling);
+            break;
+
+
+
+                    case 18: 
+            Console.WriteLine("--- 18.) MENGHITUNG LUAS BALOK --- ");
+            Console.WriteLine("Masukkan a: ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan b: ");
+            d = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan c: ");
+            t = int.Parse(Console.ReadLine());
+            keliling = 2 * (r * d) + 2 * (r * t) + 2 * (d * t);
+            Console.WriteLine("Luas = 2 * (a * b) + 2 * (a * c) + 2 * (b * c) = " + keliling );
+            break;
+
+
+                    case 19: 
+            Console.WriteLine("--- 19.) MENGHITUNG VOLUME BALOK --- ");
+            Console.WriteLine("Masukkan panjang : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan luas alas : ");
+            d = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi trapesium : ");
+            t = int.Parse(Console.ReadLine());
+            keliling =  r * d * t;
+            Console.WriteLine(" Volume =  a * b * c = " + r + " * " + " d " + " * " + t + " = " + keliling);
+            break;
+
+
+
+             case 20: 
+            Console.WriteLine("--- 20.) MENGHITUNG LUAS PERMUKAAN LIMAS SEGIEMPAT --- ");
+            Console.WriteLine("Masukkan panjang : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan luas alas : ");
+            d = int.Parse(Console.ReadLine());
+            keliling =  Math.Pow(r,2);
+            T /*LuasSegitiga*/ = 1.0/2.0 * r * d;
+            t/*LuasLimas*/  =(4.0 * T ) + keliling;
+            Console.WriteLine("Luas = ( 4* Luas Segitiga ) + Luas Alas = ( 4 * " + T + " ) + " + keliling + " = " + t);
+            break;
+
+
+
+              case 21: 
+            Console.WriteLine("--- 21.) MENGHITUNG VOLUME LIMAS SEGIEMPAT --- ");
+            Console.WriteLine("Masukkan luas alas : ");
+            r/*alas*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi limas : ");
+            d /*tinggi*/ = int.Parse(Console.ReadLine());
+            keliling/*luas alas*/  = Math.Pow(r,r);
+            rumusa = 1.0/3.0 * r * d;
+            Console.WriteLine("Volume = 1/3 * Luas alas * tinggi = 1/3 * " + r + " * " + d + " = " + rumusa);
+            break;
+
+
+
+                case 22: 
+            Console.WriteLine("--- 22.) MENGHITUNG VOLUME PRISMA SEGITIGA --- ");
+            Console.WriteLine("Masukkan alas : ");
+            r/*alas*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi segitiga  : ");
+            d /*tinggi*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi T  : ");
+            t /*tinggi*/ = int.Parse(Console.ReadLine());
+            keliling/*luas alas*/  = 1.0/2.0 * r * d;
+            rumusa = keliling * t; 
+            Console.WriteLine("Volume = 1/2 * alas * tinggi * Tinggi = 1/2 * " + r + " * " + d + " * " + t + " = " + rumusa);
+            break;
+
+
+
+                     case 23: 
+            Console.WriteLine("--- 23.) MENGHITUNG LUAS PERMUKAAN PRISMA SEGITIGA --- ");
+            Console.WriteLine("Rumus Luas Permukaan Prisma Segitiga = Luas Selimut + Luas Alas ");
+            Console.WriteLine("Masukkan sisi : ");
+            r/*sisi*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan lebar  : ");
+            d /*lebar*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan lebar prisma  : ");
+            t /*lebar prisma*/ = int.Parse(Console.ReadLine());
+            keliling /*sisisegitiga*/ = Math.Pow(d,2) - Math.Pow(t,2);
+            Console.WriteLine("hasil sisi segitiga yang hasilnya berbentuk akar : " + keliling);
+            T/*sqrt*/ = Math.Sqrt(keliling);
+            Console.WriteLine("akar dari " + keliling + " adalah : " + T );
+            Console.WriteLine("");
+            Console.WriteLine("ini belum selesai...tekan enter untuk lanjut ");
+            j = Console.ReadLine();
+            luas =/*luasselimut*/  (r * d) + (r * t) + (r * T);
+            Console.WriteLine("Luas Selimut = (Panjang * lebar) + ( panjang * tinggi) + (panjang * tinggi (hasil akar) = " + luas);
+            a = 2 * (1.0 / 2.0 * T * t);
+            rumusa = luas + a;
+            Console.WriteLine("hasil dari menghitung luas permukaan prisma segitiga adalah : " + rumusa);
+            break;
+
+
+                        case 24: 
+            Console.WriteLine("--- 24.) MENGHITUNG VOLUME LIMAS SEGITIGA --- ");
+            Console.WriteLine("Masukkan alas luas segitiga : ");
+            r/*alas*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi limas segitiga  : ");
+            d /*tinggi*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan alas limas  : ");
+            t /*alas limas*/ = int.Parse(Console.ReadLine());
+            rumusa = 1.0/3.0 * r * d * T;
+            Console.WriteLine("  Volume = 1.0 / 3.0 * a * b * c");
+            Console.WriteLine(" V = 1/3 * alas limas * tinggi limas * tinggi alas = 1/3 * " + r + " * " + d + " * " + t + " = " +  rumusa);
+            break;
+
+            
+
+                    case 25: 
+            Console.WriteLine("--- 25.) MENGHITUNG LUAS SELIMUT TABUNG (JARI-JARI) --- ");
+            Console.WriteLine("Masukkan jari-jari tabung  : ");
+            r/*alas*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi tabung  : ");
+            d /*tinggi*/ = int.Parse(Console.ReadLine());
+             rumusa = 2 * 22.0 / 7.0 * r * d;
+            rumusb = 2 * 3.14 * r * d;  
+            Console.WriteLine("Hasil luas selimut (phi:22/7) =  2 * 22/7 * r * tinggi = 2 * 22/7 * " + r +  " * " + d + " = " + rumusa);
+            Console.WriteLine("Hasil luas selimut (phi:3.14) =  2 * 3.14 * r * tinggi = 2 * 3.14 * " + r +  " * " + d + " = " + rumusb);
+            break;
+
+
+
+
+                    case 26: 
+            Console.WriteLine("--- 26.) MENGHITUNG LUAS SLEIMUT TABUNG (DIAMETER) --- ");
+            Console.WriteLine("Masukkan diameter tabung  : ");
+            r/*alas*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi tabung  : ");
+            d /*tinggi*/ = int.Parse(Console.ReadLine());
+             rumusa = 22.0 / 7.0 * r * d;
+            rumusb = 3.14 * r * d;  
+            Console.WriteLine("Hasil luas selimut (phi:22/7) =  22/7 * r * tinggi =  22/7 * " + r +  " * " + d + " = " + rumusa);
+            Console.WriteLine("Hasil luas selimut (phi:3.14) =  3.14 * r * tinggi = 3.14 * " + r +  " * " + d + " = " + rumusb);
+            break;
+
+
+
+
+            
+                    case 27: 
+            Console.WriteLine("--- 27.) MENGHITUNG LUAS PERMUKAAN TABUNG (JARI-JARI --- ");
+            Console.WriteLine("Masukkan jari-jari tabung  : ");
+            r/*alas*/ = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi tabung  : ");
+            d /*tinggi*/ = int.Parse(Console.ReadLine());
+            rumusa = 2 * 22.0 / 7.0 * r * (r + d);
+            rumusb = 2 * 3.14 * r * (r + d);  
+            Console.WriteLine("Hasil luas selimut (phi:22/7) = 2 * 22/7 * r * (r + t)  = 2 *  22/7 * " + r +  " * ( " + r + " + " + t + " ) = " +  rumusa);
+            Console.WriteLine("Hasil luas selimut (phi:3.14) = 2 * 3.14 * r * (r + t)  = 2 *  3.14 * " + r +  " * ( " + r + " + " + t + " ) = " +  rumusb);
+            break;
+
+
+
+
+                    case 28: 
+            Console.WriteLine("--- 28.) MENGHITUNG VOLUME TABUNG (JARI-JARI) --- ");
+            Console.WriteLine("Masukkan jari-jari tabung  : ");
+            r= int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan tinggi tabung  : ");
+            d = int.Parse(Console.ReadLine());
+            rumusa = 22.0 / 7.0 * Math.Pow(r, 2) * d;
+            rumusb = 3.14 * Math.Pow(r, 2) * d;
+            Console.WriteLine("Hasil luas selimut (phi:22/7)  = Phi * (r pangkat 2 * tinggi ) = 22/7 * " + Math.Pow(r,2) + " * " + d + " = " + rumusa );
+            Console.WriteLine("Hasil luas selimut (phi:3.14)  = Phi * (r pangkat 2 * tinggi ) = 3.14 * " + Math.Pow(r,2) + " * " + d + " = " + rumusb );
+            break;
+
+
+
+
+                    case 29: 
+            Console.WriteLine("--- 29.) MENGHITUNG LUAS SELIMUT KERUCUT  --- ");
+            Console.WriteLine("Masukkan jari-jari kerucut  : ");
+            r= int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan sisi kerucut  : ");
+            d /*sisikerucut*/ = int.Parse(Console.ReadLine());
+            pytagoras = Math.Pow(r,2) + Math.Pow(d,2);
+            Console.WriteLine("Hasil sisi segitiga yang hasilnya berbentuk akar = " + pytagoras);
+            rumusa = 22.0 / 7.0 * r * d;
+            rumusb = 3.14 * r * d;      
+            Console.WriteLine("rumus A (phi:22/7) yaitu = Luas = phi * r * sisi =  22/7 * " +  a + " * " + d + " = " + rumusa) ;
+            Console.WriteLine("rumus B (phi:3.14) yaitu = Luas = phi * r * sisi =  3.14 * " +  a + " * " + d + " = " + rumusb) ;
+            break;
+
+
+
+                     case 30: 
+            Console.WriteLine("--- 30.) MENGHITUNG LUAS PERMUKAAN KERUCUT  --- ");
+            Console.WriteLine("Masukkan jari-jari kerucut  : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan sisi kerucut  : ");
+            d /*sisikerucut*/ = int.Parse(Console.ReadLine());
+            rumusa = (22.0 / 7.0 * r * (r + d));
+            rumusb = (3.14 * r * (r + d));
+            Console.WriteLine("Hasil luas permukaannya (Phi :22/7) : Luas = (22/7 * r * (r + sisi)) = 22/7 * " + r + " * ( " + r + " + " + d + " ) = " + rumusa );
+            Console.WriteLine("Hasil luas permukaannya (Phi :3.14) : Luas = (3.14 * r * (r + sisi)) = 3.14 * " + r + " * ( " + r + " + " + d + " ) = " + rumusb );
+            break;
+
+
+                    case 31: 
+            Console.WriteLine("--- 31.) MENGHITUNG VOLUME KERUCUT  --- ");
+            Console.WriteLine("Masukkan jari-jari kerucut  : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan sisi kerucut  : ");
+            d /*sisikerucut*/ = int.Parse(Console.ReadLine());
+            rumusa = 1.0 / 3.0 * 22.0 / 7.0 * Math.Pow(r,2) * d;
+            rumusb = 1.0 / 3.0 * 3.14 * Math.Pow(r,2) * d;
+            Console.WriteLine("Rumus a (phi:22/7) = 1.0/3.0 * 22.0/7.0 * (r pangkat 2) * tinggi = 1.0/3.0 * 22.0/7.0 * " + Math.Pow(r,2) + " * " + d + " = " + rumusa);
+            Console.WriteLine("Rumus b (phi:3.14) = 1.0/3.0 * 3.14 * (r pangkat 2) * tinggi = 1.0/3.0 * 3.14 * " + Math.Pow(r,2) + " * " + d + " = " + rumusb);
+            break;
+
+
+
+
+                    case 32: 
+            Console.WriteLine("--- 32.) MENGHITUNG LUAS PERMUKAAN BOLA  --- ");
+            Console.WriteLine("Masukkan jari-jari kerucut  : ");
+            r = int.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan sisi kerucut  : ");
+            d /*sisikerucut*/ = int.Parse(Console.ReadLine());
+            rumusa = 1.0 / 3.0 * 22.0 / 7.0 * Math.Pow(r,2) * d;
+            rumusb = 1.0 / 3.0 * 3.14 * Math.Pow(r,2) * d;
+            Console.WriteLine("Rumus a (phi:22/7) = 1.0/3.0 * 22.0/7.0 * (r pangkat 2) * tinggi = 1.0/3.0 * 22.0/7.0 * " + Math.Pow(r,2) + " * " + d + " = " + rumusa);
+            Console.WriteLine("Rumus b (phi:3.14) = 1.0/3.0 * 3.14 * (r pangkat 2) * tinggi = 1.0/3.0 * 3.14 * " + Math.Pow(r,2) + " * " + d + " = " + rumusb);
+            break;
+
+
+
+                    case 33: 
+            Console.WriteLine("--- 33.) MENGHITUNG VOLUME BOLA  --- ");
+            Console.WriteLine("Masukkan jari-jari kerucut  : ");
+            r = int.Parse(Console.ReadLine());
+            rumusa = 4.0 / 3.0 * 22.0 / 7.0 * Math.Pow(r,3);
+            rumusb = 4.0 / 3.0 * 3.14 * Math.Pow(r,3);
+            Console.WriteLine(" Hasil (phi:22/7) = 4/3 * 22/7 * r^3 = 4/3 * 22/7 * " + Math.Pow(r,3) + " = " + rumusa);
+            Console.WriteLine(" Hasil (phi:3.14) = 4/3 * 3.14 * r^3 = 4/3 * 3.14 * " + Math.Pow(r,3) + " = " + rumusb);
+            break;
+
+
+            default :
+            Console.WriteLine("Pilihan tidak valid");
+            break;
+        }
+        Console.WriteLine("ingin coba program ini lagi ? : ");
+        j = Console.ReadLine();
+        }while ( j == " Y " || j == "y");
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("Made by Ikkoc_awinata");
+    }
+}
+}

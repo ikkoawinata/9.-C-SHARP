@@ -1,0 +1,53 @@
+using System;
+
+namespace lulusipk{
+    class Program{
+
+
+        static void welcome(){
+            Console.WriteLine("======================================================================");
+            Console.WriteLine("         S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("               LULUS IPK (PERCABANGAN IF ELSE)");
+            Console.WriteLine("                          BAHASA C#");
+            Console.WriteLine("======================================================================");
+        }
+        static void Main(string[] args){
+            welcome();
+            string mhs = " ", fak = " ", jur = " ", prodi = " ", angkatan = " ", j = " ";
+            float ipk = 0;
+
+
+do{
+            Console.WriteLine("masukkan nama mahasiswa/i : ");
+            mhs = Console.ReadLine();
+            Console.WriteLine("angkatan: ");
+            angkatan = Console.ReadLine();
+            Console.WriteLine("Fakultas [contoh:Fakultas_teknik] :  ");
+            fak = Console.ReadLine();
+            Console.WriteLine("Fakultas [Jurusan [contoh:nama_jurusan] :  ");
+            jur = Console.ReadLine();
+            Console.WriteLine("Prodi [contoh:nama_prodi] :  ");
+            prodi = Console.ReadLine();
+            Console.WriteLine("Masukkan IPK Terakhir Mahasiswa/i :  ");
+            ipk = float.Parse(Console.ReadLine());
+
+            if ( ipk >= 4.00){
+                Console.WriteLine(" saudara " + mhs + " dari angkatan " + angkatan + " dari fakultas " +  fak + "  dengan jurusan " +  jur + "  dengan program studi " + prodi +  " lulus dengan IPK sempurna "  + ipk);
+            }else if (ipk >= 3.49){
+                         Console.WriteLine(" saudara " + mhs + " dari angkatan " + angkatan + " dari fakultas " +  fak + "  dengan jurusan " +  jur + "  dengan program studi " + prodi +  " lulus dengan IPK sangat baik "  + ipk);
+
+            }else if ( ipk >= 2.49){
+                         Console.WriteLine(" saudara " + mhs + " dari angkatan " + angkatan + " dari fakultas " +  fak + "  dengan jurusan " +  jur + "  dengan program studi " + prodi +  " lulus dengan IPK baik "  + ipk);
+            }else if ( ipk >= 1.49){
+                         Console.WriteLine("saudara " + mhs + " dari angkatan " + angkatan + " dari fakultas " +  fak + "  dengan jurusan " +  jur + "  dengan program studi " + prodi +  " dinyatakan mengulang dengan IPK sempurna "  + ipk);
+            }
+            Console.WriteLine();
+        Console.WriteLine("ingin coba program lagi ? [Y/N] : ");
+        j = Console.ReadLine();
+        }while ( j == " Y" || j == "y");
+         Console.WriteLine();
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("made by ikkoc_awinata");
+        }
+    }
+}

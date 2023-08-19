@@ -1,0 +1,42 @@
+using System;
+
+namespace baginote{
+    class Program {
+
+        static void welcome(){
+            Console.WriteLine("=====================================================");
+            Console.WriteLine("    S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("          P E M B A G I A N  +  N O T E");
+            Console.WriteLine("                      BAHASA C#");
+            Console.WriteLine("=====================================================");
+        }
+        static void Main(string[] args) {
+            welcome();
+            float a = 0, b = 0, hasil = 0;
+            string j = "";
+
+
+            do{
+            Console.WriteLine("masukkan bilangan yang akan dibagi : ");
+            a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Masukkan bilangan pembagi : ");
+            b = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("-----------------------------------------------------");
+            if ( b == 0 ){
+                Console.WriteLine("tidak dapat dibagi dengan angka nol, maka hasilnya akan tetap");
+            }else {
+                hasil = a / b;
+                Console.WriteLine("hasil dari pembagian " + a + " + " + b + " =" + hasil);
+            }
+            Console.WriteLine("-----------------------------------------------------");
+            Console.WriteLine("Ingin coba program lagi ? [Y/N] : " );
+            j = Console.ReadLine();
+
+        }while ( j == " Y" || j == " y ");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Terima kasih telah mennggunakan program ini");
+        Console.WriteLine("made by ikkoc_awinata");
+        }
+    }
+};

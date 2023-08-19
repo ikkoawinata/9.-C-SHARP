@@ -1,0 +1,58 @@
+using System;
+
+class InputDataBil
+{
+    static void Welcome()
+    {
+        Console.WriteLine("===============================================================");
+        Console.WriteLine("       S E L A M A T  D A T A N G  D I  P R O G R A M ");
+        Console.WriteLine("INPUT DATA DAN MENENTUKAN NILAI DATA TERKECIL DAN TERBESAR");
+        Console.WriteLine("===============================================================");
+    }
+
+    static void Main(string[] args)
+    {
+        Welcome();
+        int n;
+        double terkecil, terbesar, bil;
+        char j = 'Y';
+
+        do
+        {
+            Console.Write("Masukkan banyaknya data yang akan dimasukkan : ");
+            n = Convert.ToInt32(Console.ReadLine());
+            terbesar = 0;
+            terkecil = 0;
+
+            for (int i = 1; i <= n; i++)
+            {
+                Console.Write("Masukkan bilangan ke : " + i + " : ");
+                bil = Convert.ToDouble(Console.ReadLine());
+
+                if (i == 1)
+                {
+                    terkecil = bil;
+                    terbesar = bil;
+                }
+                else if (bil < terkecil)
+                {
+                    terkecil = bil;
+                }
+                else if (bil > terbesar)
+                {
+                    terbesar = bil;
+                }
+            }
+            Console.WriteLine("");
+            Console.WriteLine("Nilai terkecilnya adalah : " + terkecil);
+            Console.WriteLine("Nilai terbesar adalah : " + terbesar);
+            Console.WriteLine();
+            Console.Write("Mau coba lagi ? [Y/N] : ");
+            j = Console.ReadLine()[0];
+        }
+        while (j == 'Y' || j == 'y');
+
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("Made by Ikkoc_awinata");
+    }
+}

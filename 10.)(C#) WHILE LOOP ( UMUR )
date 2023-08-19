@@ -1,0 +1,53 @@
+using System;
+
+namespace whileumur
+{
+ class Program{
+    static void welcome(){
+        Console.WriteLine("=============================================================");
+        Console.WriteLine("        S E L A M A T  D A T A N G  D I  P R O G R A M");
+        Console.WriteLine("      PERULANGAN WHILE DAN PERCABANGAN IF ELSE (UMUR)");
+        Console.WriteLine("                            BAHASA C#");
+        Console.WriteLine("=============================================================");
+    }
+
+    static void Main(string[] args){
+       welcome();
+
+       int umur = 0;
+       string j = " ";
+
+
+
+do{
+       Console.WriteLine("masukkan umur anda sekarang : ");
+       umur = int.Parse(Console.ReadLine());
+
+
+       while (umur <=12 ){
+        Console.WriteLine("saya tidak yakin umur anda " + umur);
+        Console.WriteLine("silakan diiulangi lagi.....");
+        Console.WriteLine("");
+        
+       Console.WriteLine("masukkan umur anda sekarang : ");
+       umur = int.Parse(Console.ReadLine());
+       } 
+       if ( umur >= 12 && umur <= 21){
+        Console.WriteLine("waahh anda baru saja beranjak dewasa");
+        Console.WriteLine("gunakan waktu sebaik mungkin");
+       }else if ( umur >= 22 && umur <= 100 ){
+        Console.WriteLine("anda sudah beranjak tua");
+        Console.WriteLine("jadilah seseorang yang dewasa dan jangan lupa perbaiki ibadahmu");
+       }else if ( umur >= 100){
+        Console.WriteLine("WAAHHH ANDA SANGATT WAHHH SEKALII");
+       }
+       Console.WriteLine("");
+       Console.WriteLine("ingin coba program lagi ? [Y/N] : ");
+       j = Console.ReadLine();
+    }while( j == " Y" || j == "y");
+    Console.WriteLine("");
+    Console.WriteLine("Terima kasih telah menggunakan program ini");
+    Console.WriteLine("Made by ikkoc_awinata");
+ }   
+}
+}

@@ -1,0 +1,40 @@
+using System;
+
+namespace Struct{
+    class Program{
+
+        static void welcome(){
+            Console.WriteLine("================================================================");
+            Console.WriteLine("       S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("                 D A T A  S T R U C T");
+            Console.WriteLine("                     BAHASA C#");
+            Console.WriteLine("================================================================");
+
+        }
+
+          public class DataPribadi{
+                public string nama;
+                public long nim;
+                public string JK;
+                public string alamat;
+
+                }
+                
+
+            static void Main(string[] args){
+                welcome();
+
+              DataPribadi m = new DataPribadi{
+                    nama = " Ikko cahya Awinata ",
+                    nim = 220351204038 ,
+                    JK = " perempuan ",
+                    alamat = " Jalan Sampoerna No.12 B, Surabaya",
+              };
+
+              Console.WriteLine("Nama          : " + m.nama);
+              Console.WriteLine("NIM           : " + m.nim);
+              Console.WriteLine("Jenis Kelamin : " + m.JK);
+              Console.WriteLine("Alamat        : " + m.alamat);
+            }
+    }
+}

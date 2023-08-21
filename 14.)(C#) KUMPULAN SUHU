@@ -1,0 +1,191 @@
+using System;
+
+
+namespace KALKULATOR{
+    class Program{
+        static void welcome(){
+            Console.WriteLine("==================================================================");
+            Console.WriteLine("         S E L A M A T  D A T A N G  D I  P R O G R A M" );
+            Console.WriteLine("                  K A L K U LA T O R  S U H U ");
+            Console.WriteLine("                             BAHASA C#");
+            Console.WriteLine("==================================================================");
+        }
+
+
+    static void tabel(){
+         Console.WriteLine("========================================");
+    Console.WriteLine("No.|             Nama Suhu              |");
+    Console.WriteLine("========================================");
+    Console.WriteLine("1  .| Derajat Celcius    -> Fahrenheit  |");
+    Console.WriteLine("2  .| Derajat Fahrenheit -> Celcius     |");
+    Console.WriteLine("3  .| Derajat Reamur     -> Fahrenheit  |");
+    Console.WriteLine("4  .| Derajat Fahrenheit -> Reamur      |");
+    Console.WriteLine("5  .| Derajat Reamur     -> Celcius     |");
+    Console.WriteLine("6  .| Derajat Celcius    -> Reamur      |");
+    Console.WriteLine("7  .| Derajat Kelvin     -> Celcius     |");
+    Console.WriteLine("8  .| Derajat Celcius    -> Kelvin      |");
+    Console.WriteLine("9  .| Derajat Kelvin     -> Fahrenheit  |");
+    Console.WriteLine("10 .| Derajat Fahrenheit -> Kelvin      |");
+    Console.WriteLine("11 .| Derajat Kelvin     -> Reamur      |");
+    Console.WriteLine("12 .| Derajat Reamur     -> Kelvin      |");
+    Console.WriteLine("========================================");
+    }
+            static void Main(string[] args) {
+                welcome();
+                tabel();
+
+                float c = 0, r = 0, f = 0, k = 0, pil = 0;
+                string j = " ";
+
+
+do{
+
+                Console.WriteLine("masukkan pilihan anda sesuai dengan pada tabel : ");
+                pil = int.Parse(Console.ReadLine());
+
+                switch(pil){
+                    case 1:
+                    Console.WriteLine("-------- 1.) Anda memilih Celcius -> Fahrenheit -------- ");
+                    Console.WriteLine("Masukkan suhu celcius yang diketahui : ");
+                    c = int.Parse(Console.ReadLine());
+                    f = ( 9 / 5 * c ) + 32;
+                    Console.WriteLine("Rumusnya yaitu : 9/5 * C + (32) = 9/5 * " + c + " (32) = " + f);
+                    Console.WriteLine("hasilnya adalah : " + f + " derajat faherenheit");
+                    break;
+
+
+                      case 2:
+                    Console.WriteLine("-------- 2.) Anda memilih Fahrenheit  -> Celcius -------- ");
+                    Console.WriteLine("Masukkan suhu fahrenheit yang diketahui : ");
+                    f = int.Parse(Console.ReadLine());
+                    c = 5 / 9* (f - (32));
+                    Console.WriteLine("Rumusnya yaitu : 5/9 * °F - (32) = 5/9 * " + c + " - (32) =  + " + c);
+                    Console.WriteLine("hasilnya adalah : " + c + " derajat celcius");
+                    break;
+
+
+                       case 3:
+                    Console.WriteLine("-------- 3.) Anda memilih Reamur -> Fahrenheit -------- ");
+                    Console.WriteLine("Masukkan suhu reamur yang diketahui : ");
+                    r = int.Parse(Console.ReadLine());
+                    f = (9 / 4 * r) + (32);
+                    Console.WriteLine("Rumusnya yaitu : 9/4 * °R + (32) = 9/4 * " +  r  + "(32) = " + f );
+                    Console.WriteLine("hasilnya adalah : " + f + " derajat fahrenheit");
+                    break;
+
+
+
+                       case 4:
+                    Console.WriteLine("-------- 4.) Anda memilih Fahrenheit -> Reamur  -------- ");
+                    Console.WriteLine("Masukkan suhu fahrenheit yang diketahui : ");
+                    f = int.Parse(Console.ReadLine());
+                    r = 4 / 9 * (f - 32);
+                    Console.WriteLine("Rumusnya yaitu : (4/9) * (°F -32) = (4/9) * " + " ( " + f + " - 32 ) = " + r);
+                    Console.WriteLine("hasilnya adalah : " + r + " derajat reamur");
+                    break;
+
+
+
+                       case 5:
+                    Console.WriteLine("-------- 5 .) Anda memilih Reamur -> Celcius -------- ");
+                    Console.WriteLine("Masukkan suhu reamur yang diketahui : ");
+                    r = int.Parse(Console.ReadLine());
+                    c = 5/ 4 * r;
+                    Console.WriteLine("Rumusnya yaitu : 5/4 * °R = 5/4 * " + r + " = " + c);
+                    Console.WriteLine("hasilnya adalah : " + c + " derajat celcius");
+                    break;
+
+
+
+                     case 6:
+                    Console.WriteLine("-------- 6.) Anda memilih Celcius -> Reamur--------- ");
+                    Console.WriteLine("Masukkan suhu celcius yang diketahui : ");
+                    c = int.Parse(Console.ReadLine());
+                    r =   4 / 5 * c;
+                    Console.WriteLine("Rumusnya yaitu : 4/5 * °R = 4/5 * " + c + " = " +  r );
+                    Console.WriteLine("hasilnya adalah : " + r + " derajat reamur");
+                    break;
+
+
+
+                      case 7:
+                    Console.WriteLine("-------- 7 .) Anda memilih Kelvin -> Celcius --------- ");
+                    Console.WriteLine("Masukkan suhu kelvin yang diketahui : ");
+                    k = int.Parse(Console.ReadLine());
+                    c =  273 - k;
+                    Console.WriteLine("Rumusnya yaitu : 273 - k = 273 - " + k + " = " +  c );
+                    Console.WriteLine("hasilnya adalah : " + c + " derajat celcius");
+                    break;
+
+
+
+                      case 8:
+                    Console.WriteLine("-------- 8 .) Anda memilih Celcius -> Kelvin --------- ");
+                    Console.WriteLine("Masukkan suhu celcius yang diketahui : ");
+                    c = int.Parse(Console.ReadLine());
+                    k = 273 + c;
+                    Console.WriteLine("Rumusnya yaitu : 273 +  ° K = 273 + " + c + "  = " +  k );
+                    Console.WriteLine("hasilnya adalah : " + k + " derajat kelvin");
+                    break;
+
+
+
+                     case 9:
+                    Console.WriteLine("-------- 9.) Anda memilih Kelvin -> Fahrenheit --------- ");
+                    Console.WriteLine("Masukkan suhu kelvin yang diketahui : ");
+                    k = int.Parse(Console.ReadLine());
+                    f = 9 / 5 * (k - 273) + 32;
+                    Console.WriteLine("Rumusnya yaitu : 273 +  °K = 273 + " +  k + "  =  " +  f );
+                    Console.WriteLine("hasilnya adalah : " + f + " derajat fahrenheit");
+                    break;
+
+
+
+                       case 10:
+                    Console.WriteLine("-------- 10 .) Anda memilih Fahrenheit -> Kelvin --------- ");
+                    Console.WriteLine("Masukkan suhu fahrenheit yang diketahui : ");
+                    f = int.Parse(Console.ReadLine());
+                    k = 5 / 9 * (f - 32) + 273;
+                    Console.WriteLine("Rumusnya yaitu : 273 +  °K = 273 + " +  k + "  =  " +  f );
+                    Console.WriteLine("hasilnya adalah : " + f + " derajat fahrenheit");
+                    break;
+
+
+
+                        case 11:
+                    Console.WriteLine("-------- 11 .) Anda memilih Kelvin -> Reamur --------- ");
+                    Console.WriteLine("Masukkan suhu kelvin yang diketahui : ");
+                    k = int.Parse(Console.ReadLine());
+                    r =  4 / 5 * (k - 273);
+                    Console.WriteLine("Rumusnya yaitu : (4/5 * °K) - 273 = (4/5 * " + k + " ) - 273 = " + r);
+                    Console.WriteLine("hasilnya adalah : " + r + " derajat reamur");
+                    break;
+
+
+
+                         case 12:
+                    Console.WriteLine("-------- 12.) Anda memilih Reamur -> Kelvin --------- ");
+                    Console.WriteLine("Masukkan suhu reamur yang diketahui : ");
+                    r = int.Parse(Console.ReadLine());
+                    k = (5 / 4 * r) + 273;
+                    Console.WriteLine("Rumusnya yaitu : (5/4 * °R) + 273 = (5/4 * " + r + " ) + 273 = " + k);
+                    Console.WriteLine("hasilnya adalah : " + k + " derajat kelvin");
+                    break;
+
+
+
+                    default :
+                    Console.WriteLine("pilihan tidak valid");
+                    break;
+
+
+                }
+                Console.WriteLine("ingin coba program lagi ? [Y/N] :");
+                j = Console.ReadLine();
+            }  while ( j == "Y " || j == "y");
+            Console.WriteLine("");
+            Console.WriteLine("Terima kasih telah menggunakan program ini");
+            Console.WriteLine("made by ikkoc_awinata");
+    }
+}
+}

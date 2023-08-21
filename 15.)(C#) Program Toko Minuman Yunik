@@ -1,0 +1,169 @@
+using System;
+
+namespace TOKO{
+    class Program{
+
+
+
+        static void welcome(){
+            Console.WriteLine("==================================================================================================");
+            Console.WriteLine("                      S E L A M A T  D A T A N G  D I  P R O G R A M ");
+            Console.WriteLine("                                TOKO IKKO MINUMAN YUNIK");
+            Console.WriteLine("                                      BAHASA C#");
+            Console.WriteLine("==================================================================================================");
+        }
+
+
+        static void tabel(){
+    Console.WriteLine("==================================================================================================");
+    Console.WriteLine("No.||\t\t Nama Jasa\t\t\t ||\t\t  Harga Satuan\t\t\t|| ");
+    Console.WriteLine("==================================================================================================");
+    Console.WriteLine("1. ||\t Edit Background Foto\t\t\t || Rp.\t\t\t\t\t  10.000||");
+    Console.WriteLine("2. ||\t Print hitam putih\t\t\t || Rp.\t\t\t\t\t   1.000||");
+    Console.WriteLine("3. ||\t Print Warna fulll\t\t\t || Rp. \t\t\t\t   2.500||");
+    Console.WriteLine("4. ||\t cetak foto 4x6 (1 foto get 5 pcs\t || Rp.\t\t\t\t\t   7.000||");
+    Console.WriteLine("5. ||\t cetak foto 3x4 (1 foto get 6 pcs\t || Rp.\t\t\t\t\t   7.000||");
+    Console.WriteLine("6. ||\t cetak foto 2x3 (1 foto get 6 pcs\t || Rp.\t\t\t\t\t   7.000||");
+    Console.WriteLine("7. ||\t Pengetikan / lembar           \t\t || Rp.\t\t\t\t\t   5.000||");
+    Console.WriteLine("8. ||\t Laminating / lembar            \t || Rp.\t\t\t\t\t   5.000||");
+    Console.WriteLine("9. ||\t Pulsa hp     \t\t\t\t || Rp.\t\t\t\t          +3.000||");
+    Console.WriteLine("10.||\t token listrik  \t\t\t || Rp.\t\t\t\t          +3.000||");
+    Console.WriteLine("==================================================================================================");
+    Console.WriteLine("\t\t\t\t\t Made by Ikko Awinata \t\t\t\t\t ");
+    Console.WriteLine("==================================================================================================")
+            ;
+        }
+
+        static void work(){
+            float hasil1 = 0, hasil2 = 0, hasil3 = 0, hasil4 = 0, hasil5 = 0, hasil6 = 0, hasil7 = 0, hasil8 = 0, hasil9 = 0,hasil10 = 0,  total = 0, n = 0;
+            int pilihan = 0;
+            string j = " ";
+
+
+
+do{
+            Console.WriteLine("Silakan anda mau apa ? [1/2/3/4/5/6/7/8/9/10] : ");
+            pilihan = int.Parse(Console.ReadLine());
+
+            switch(pilihan){
+                case 1:
+                Console.WriteLine("----- 1.) ANDA MEMILIH EDIT BACKGROUND FOTO -----");
+                Console.WriteLine("anda mau edit berapa foto ? ");
+                n = float.Parse(Console.ReadLine());
+                hasil1 = n * 10000;
+                Console.WriteLine("Total harganya adalah : " + hasil1);
+                break;
+
+
+                 case 2:
+                Console.WriteLine("----- 2.) ANDA MEMILIH PRINT HITAM PUTIH -----");
+                Console.WriteLine("Anda mau print berapa lembar ? [*masukkan angka] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil2 = n * 1000;
+                Console.WriteLine("Total harganya adalah : " + hasil2);
+                break;
+
+
+                  case 3:
+                Console.WriteLine("----- 3.) ANDA MEMILIH PRINT FULL COLOR -----");
+                Console.WriteLine("Anda mau print berapa lembar ? [*masukkan angka] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil3 = n * 2500;
+                Console.WriteLine("Total harganya adalah : " + hasil3);
+                break;
+
+
+                  case 4:
+                Console.WriteLine("-----  4.) ANDA MEMILIH CETAK FOTO 4X6 (1 foto get 5 pcs) -----");
+                Console.WriteLine("Anda mau print berapa lembar ? [*masukkan angka] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil4 = n * 7000;
+                Console.WriteLine("Total harganya adalah : " + hasil4);
+                break;
+
+
+
+                  case 5:
+                Console.WriteLine("----- 5.) ANDA MEMILIH CETAK FOTO 3X4 (1 foto get 6 pcs) -----");
+                Console.WriteLine("Silahkan kirim fotonya ? [*masukkan angka] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil5 = n * 7000;
+                Console.WriteLine("Total harganya adalah : " + hasil5);
+                break;
+
+
+                case 6:
+                Console.WriteLine("----- 6.) ANDA MEMILIH CETAK FOTO 2X3 (1 foto get 6 pcs) -----");
+                Console.WriteLine("Silahkan kirim fotonya ? [*masukkan angka] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil6 = n * 7000;
+                Console.WriteLine("Total harganya adalah : " + hasil6);
+                break;
+
+
+                  case 7:
+                Console.WriteLine("----- 7.) ANDA MEMILIH PENGETIKAN -----");
+                Console.WriteLine("berapa halaman yang mau diketik ? [*masukkan angka] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil7 = n * 5000;
+                Console.WriteLine("Total harganya adalah : " + hasil7);
+                break;
+
+
+                case 8:
+                Console.WriteLine("----- 8.) ANDA MEMILIH LAMINATING -----");
+                Console.WriteLine("Berapa lembar yang mau dilaminating ? [*masukkan angka] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil8 = n * 5000;
+                Console.WriteLine("Total harganya adalah : " + hasil8);
+                break;
+
+
+                  case 9:
+                Console.WriteLine("----- 9.) ANDA MEMILIH BELI PULSA -----");
+                Console.WriteLine("Mau beli pulsa berapa ? [ex = 5000] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil9 = 1* n + 3000;
+                Console.WriteLine("Total harganya adalah : " + hasil9);
+                break;
+
+
+                  case 10:
+                Console.WriteLine("----- 10.) ANDA MEMILIH TOKEN LISTRIK -----");
+                Console.WriteLine("Mau beli pulsa berapa ? [ex = 5000] : ");
+                n = float.Parse(Console.ReadLine());
+                hasil10 = 1* n + 3000;
+                Console.WriteLine("Total harganya adalah : " + hasil10);
+                break;
+
+
+                default:
+                Console.WriteLine("Pilihan tidak valid");
+                break;
+            }
+             total = hasil1 + hasil2 + hasil3 + hasil4 + hasil5 + hasil6 + hasil7 + hasil8 + hasil9 + hasil10;
+             Console.WriteLine("");
+             Console.WriteLine("ingin coba program lagi ? [Y/N] : ");
+             j = Console.ReadLine();
+
+        }while (j == "y" || j == "Y");
+        Console.WriteLine("total keseluruhan yang anda harus bauar adalah : " + total);
+        Console.WriteLine("");
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("made by ikkoc_awinata");
+        }
+        static void Main(string[] args){
+            welcome();
+            tabel();
+            work();
+
+           
+
+
+            
+
+
+
+                    }
+    }
+}

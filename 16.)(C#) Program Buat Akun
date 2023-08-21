@@ -1,0 +1,73 @@
+using System;
+
+class Program
+{
+    static void Welcome()
+    {
+        Console.WriteLine("=============================================================");
+        Console.WriteLine("    S E L A M A T   D A T A N G   D I   P R O G R A M");
+        Console.WriteLine("             PEMBUATAN AKUN DAN PASSWORD");
+        Console.WriteLine("                     BAHASA C#");
+        Console.WriteLine("=============================================================");
+    }
+
+    static void Main()
+    {
+        Welcome();
+
+        int i = 0;
+        string user = " ";
+        string pass = " ";
+        string x = " ";
+        string y = " ";
+        string j = " ";
+        string J = " ";
+
+        do
+        {
+            do{
+            Console.WriteLine("SILAHKAN BUAT AKUN DULU YAAHHH.....");
+            Console.Write(" USERNAME : ");
+            user = Console.ReadLine() ?? " ";
+            Console.Write(" PASSWORD : ");
+            pass = Console.ReadLine() ?? " ";
+            Console.WriteLine("AKUN SUDAH DIBUAT, SILAHKAN LOGIN UNTUK MASUK");
+
+            while (i <= 2)
+            {
+                Console.Write("Masukkan USERNAME : ");
+                x = Console.ReadLine() ?? " ";
+                Console.Write("Masukkan PASSWORD : ");
+                y = Console.ReadLine() ?? " ";
+
+                if (x == user && y == pass)
+                {
+                    Console.WriteLine("YEYYY ANDA BERHASIL MASUK");
+                    Console.Write("mau ubah akun  ? [Y/N] : ");
+                    j = Console.ReadLine() ?? " ";
+                    if (j.ToLower() == "y")
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Username atau Password Salah");
+                    i++;
+                }
+            }
+
+            if (i > 2)
+            {
+                Console.WriteLine("MAAF AKUN ANDA KAMI BLOKIR ");
+                Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\n\n");
+            }
+        } while (j.ToLower() == "y");
+
+Console.WriteLine("ingin coba program lagi ? [Y/N] : ");
+J = Console.ReadLine();
+    }while ( J == "y" || J == "y");
+        Console.WriteLine("terima kasih telah menggunakan program ini");
+        Console.WriteLine("made by ikkoc_awinata");
+}
+}

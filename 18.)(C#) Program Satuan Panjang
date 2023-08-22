@@ -1,0 +1,487 @@
+using System;
+
+namespace satuanpjg{
+    class Program{
+
+        static void welcome(){
+            Console.WriteLine( "================================================================================");
+            Console.WriteLine("                  S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("                            CONVERT SATUAN PANJANG");
+            Console.WriteLine("                                 BAHASA C#");
+            Console.WriteLine( "================================================================================");
+        }
+
+        static void tabel(){
+    Console.WriteLine( "================================================================================");
+    Console.WriteLine( "NO |                 SATUAN PANJANG               ");
+    Console.WriteLine( "================================================================================");
+    Console.WriteLine( "1.  | KM (Kilometer)       ->   HM (Hektometer)                                 |");
+    Console.WriteLine( "2.  | KM (Kilometer)       ->   DAM (Dekameter)                                 |");
+    Console.WriteLine( "3.  | KM (Kilometer)       ->   M (Meter)                                       |");
+    Console.WriteLine( "4.  | KM (Kilometer)       ->   DM (Desimeter)                                  |");
+    Console.WriteLine( "5.  | KM (Kilometer)       ->   CM (Centimeter)                                 |");
+    Console.WriteLine( "6.  | KM (Kilometer)       ->   MM (Milimeter)                                  |");
+    Console.WriteLine( "7.  | HM (Hektometer)      ->   KM (Kilometer)                                  |");
+    Console.WriteLine( "8.  | HM (Hektometer)      ->   DAM (Dekameter)                                 |");
+    Console.WriteLine( "9.  | HM (Hektometer)      ->   M (Meter)                                       |");
+    Console.WriteLine( "10. | HM (Hektometer)      ->   DM (Desimeter)                                  |");
+    Console.WriteLine( "11. | HM (Hektometer)      ->   CM (Centimeter)                                 |");
+    Console.WriteLine( "12. | HM (Hektometer)      ->   MM (Milimeter)                                  |");
+    Console.WriteLine( "13. | DAM (Dekameter)      ->   KM (Kilometer)                                  |");
+    Console.WriteLine( "14. | DAM (Dekameter)      ->   HM (Hektometer)                                 |");
+    Console.WriteLine( "15. | DAM (Dekameter)      ->   M (Meter)                                       |");
+    Console.WriteLine( "16. | DAM (Dekameter)      ->   DM (Desimeter)                                  |");
+    Console.WriteLine( "17. | DAM (Dekameter)      ->   CM (Centimeter)                                 |");
+    Console.WriteLine( "18. | DAM (Dekameter)      ->   MM (Milimeter)                                  |");
+    Console.WriteLine( "19. | M (Meter)            ->   KM (Kilometer)                                  |");
+    Console.WriteLine( "20. | M (Meter)            ->   HM (Hektometer)                                 |");
+    Console.WriteLine( "21. | M (Meter)            ->   DAM (Dekameter)                                 |");
+    Console.WriteLine( "22. | M (Meter)            ->   DM (Desimeter)                                  |");
+    Console.WriteLine( "23. | M (Meter)            ->   CM (Centimeter)                                 |");
+    Console.WriteLine( "24. | M (Meter)            ->   MM (Milieter)                                   |");
+    Console.WriteLine( "25. | DM (Desimeter)       ->   KM (Kilometer)                                  |");
+    Console.WriteLine( "26. | DM (Desimeter)       ->   HM (Hektometer)                                 |");
+    Console.WriteLine( "27. | DM (Desimeter)       ->   DAM (Dekameter)                                 |");
+    Console.WriteLine( "28. | DM (Desimeter)       ->   M (Meter)                                       |");
+    Console.WriteLine( "29. | DM (Desimeter)       ->   CM (Centimeter)                                 |");
+    Console.WriteLine( "30. | DM (Desimeter)       ->   MM (Milimeter)                                  |");
+    Console.WriteLine( "31. | CM (Centimeter)      ->   KM (Kilometer)                                  |");
+    Console.WriteLine( "32. | CM (Centimeter)      ->   HM (Hektometer)                                 |");
+    Console.WriteLine( "33. | CM (Centimeter)      ->   DAM (Dekameter)                                 |");
+    Console.WriteLine( "34. | CM (Centimeter)      ->   M (Meter)                                       |");
+    Console.WriteLine( "35. | CM (Centimeter)      ->   DM (Desimeter)                                  |");
+    Console.WriteLine( "36. | CM (Centimeter)      ->   MM (Milimeter)                                  |");
+    Console.WriteLine( "37. | MM (Milimeter)       ->   KM (Kilometer)                                  |");
+    Console.WriteLine( "38. | MM (Milimeter)       ->   HM (Hektometer)                                 |");
+    Console.WriteLine( "39. | MM (Milimeter)       ->   DAM (Dekameter)                                 |");
+    Console.WriteLine( "40. | MM (Milimeter)       ->   M (Meter)                                       |");
+    Console.WriteLine( "41. | MM (Milimeter)       ->   DM (Desimeter)                                  |");
+    Console.WriteLine( "42. | MM (Milimeter)       ->   CM (Centimeter)                                 |");
+    Console.WriteLine( "================================================================================");
+        }
+        static void Main(string[] args){
+                welcome();
+                tabel();
+
+                int n = 0, pil = 0, rumus = 0;
+                string j = "";
+
+
+
+do{
+                Console.WriteLine("Silakan pilih sesuai dengan tabel : ");
+                pil = int.Parse(Console.ReadLine());
+
+
+                switch (pil){
+                    case 1:
+                    Console.WriteLine("-------- 1.) KM -> HM --------");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                    case 2:
+                    Console.WriteLine("-------- 2.) KM -> DAM -------- ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+                     case 3:
+                    Console.WriteLine("------ 3.) KM -> M --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 1000;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+                    
+                     case 4:
+                    Console.WriteLine("------ 4.) KM -> DM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10000;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+                      case 5:
+                    Console.WriteLine("------ 5.) KM -> CM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100000;
+                    Console.WriteLine(n + " * 100000 = " + rumus );
+                    break;
+
+
+                    
+                      case 6:
+                    Console.WriteLine("------ 6.) KM -> MM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 1000000;
+                    Console.WriteLine(n + " * 1000000 = " + rumus );
+                    break;
+
+
+                       case 7:
+                    Console.WriteLine("------ 7.) HM -> KM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                      rumus = n / 10;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                     case 8:
+                    Console.WriteLine("------ 8.) HM -> DAM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                      rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+
+                        case 9:
+                    Console.WriteLine("------  9.) HM -> M --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100 ;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+                        case 10:
+                    Console.WriteLine("------10.) HM -> DM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 1000 ;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+
+                        case 11:
+                    Console.WriteLine("------ 11.) HM -> CM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                       rumus = n * 10000 ;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+                     case 12:
+                    Console.WriteLine("------- 12.) HM -> MM  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100000;
+                    Console.WriteLine(n + " * 100000 = " + rumus );
+                    break;
+
+
+                       case 13:
+                    Console.WriteLine("------- 13.) DAM -> KM  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                       rumus = n / 100 ;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+                      case 14:
+                    Console.WriteLine("------- 14.) DAM -> HM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                       rumus = n / 10 ;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                       case 15:
+                    Console.WriteLine("------- 15.) DAM -> M--------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                         case 16:
+                    Console.WriteLine("-------16.) DAM -> DM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 100 ;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+
+                      case 17:
+                    Console.WriteLine("------- 17.) DAM -> CM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 1000 ;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+
+                        case 18:
+                    Console.WriteLine("-------  18.) DAM -> MM  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 10000 ;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+                       case 19:
+                    Console.WriteLine("------- 19.) M -> KM  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                      rumus = n / 1000 ;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+
+                          case 20:
+                    Console.WriteLine("------- 20.) M -> HM  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100 ;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+
+                    
+                          case 21:
+                    Console.WriteLine("------- 21.) M -> DAM --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10 ;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                         case 22:
+                    Console.WriteLine("------- 22.) M -> DM  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+
+                       case 23:
+                    Console.WriteLine("------- 23.) M -> CM   --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100 ;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+
+
+                       case 24:
+                    Console.WriteLine("------- 24.) M -> MM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 1000 ;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+
+
+                        case 25:
+                    Console.WriteLine("------- 25.) DM -> KM---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10000 ;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+
+                        case 26:
+                    Console.WriteLine("------- 26.) DM -> HM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+                       case 27:
+                    Console.WriteLine("------- 27.) DM -> DAM  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n / 100 ;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+
+                     case 28:
+                    Console.WriteLine("------- 28.) DM -> M  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n / 10 ;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                     case 29:
+                    Console.WriteLine("------- 29.) DM -> CM  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                      case 30:
+                    Console.WriteLine("------- 30.) DM -> MM  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                     case 31:
+                    Console.WriteLine("------- 31.) CM -> KM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100000;
+                    Console.WriteLine(n + " / 100000 = " + rumus );
+                    break;
+
+
+                      case 32:
+                    Console.WriteLine("------- 32.) CM -> HM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10000;
+                    Console.WriteLine(n + " / 10000 = " + rumus );
+                    break;
+
+
+                        case 33:
+                    Console.WriteLine("------- 33.) CM -> DAM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+                      case 34:
+                    Console.WriteLine("------- 34.) CM -> M ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+                      case 35:
+                    Console.WriteLine("------- 35.) CM -> DM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+                      case 36:
+                    Console.WriteLine("------- 36.) CM -> MM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                      case 37:
+                    Console.WriteLine("------- 37.) MM -> KM  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000000;
+                    Console.WriteLine(n + " / 1000000 = " + rumus );
+                    break;
+
+
+                     case 38:
+                    Console.WriteLine("------- 38.) MM -> HM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100000;
+                    Console.WriteLine(n + " / 100000 = " + rumus );
+                    break;
+
+
+                    
+                     case 39:
+                    Console.WriteLine("------- 39.) MM -> DAM  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10000;
+                    Console.WriteLine(n + " / 10000 = " + rumus );
+                    break;
+
+
+
+                        case 40:
+                    Console.WriteLine("------- 40.) MM -> M ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+                      case 41:
+                    Console.WriteLine("------- 41.) MM -> DM  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+                       case 42:
+                    Console.WriteLine("------- 42.) MM -> CM ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+                    default:
+                    Console.WriteLine("pilihan tidak valid");
+                    break;
+                }
+                Console.WriteLine("----------------------------------------------------");
+Console.WriteLine("Ingin coba program lagi ? [Y/N] : ");
+j = Console.ReadLine();
+        }while ( j == "y" || j == "Y");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("made by ikkoc_awinata");
+    }
+    
+}
+}

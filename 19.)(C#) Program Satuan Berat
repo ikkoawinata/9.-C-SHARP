@@ -1,0 +1,487 @@
+using System;
+
+namespace satuanpjg{
+    class Program{
+
+        static void welcome(){
+            Console.WriteLine( "================================================================================");
+            Console.WriteLine("                  S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("                            CONVERT SATUAN BERAT");
+            Console.WriteLine("                                 BAHASA C#");
+            Console.WriteLine( "================================================================================");
+        }
+
+        static void tabel(){
+    Console.WriteLine( "================================================================================");
+    Console.WriteLine( "NO |                 SATUAN BERAT               ");
+    Console.WriteLine( "================================================================================");
+    Console.WriteLine( "1.  | KG (Kilogram)       ->   HG (Hektogram)                                 |");
+    Console.WriteLine( "2.  | KG (Kilogram)       ->   DAG (Dekagram)                                 |");
+    Console.WriteLine( "3.  | KG (Kilogram)       ->   G (gram)                                       |");
+    Console.WriteLine( "4.  | KG (Kilogram)       ->   DG (Desigram)                                  |");
+    Console.WriteLine( "5.  | KG (Kilogram)       ->   CG (Centigram)                                 |");
+    Console.WriteLine( "6.  | KG (Kilogram)       ->   MG (Miligram)                                  |");
+    Console.WriteLine( "7.  | HG (Hektogram)      ->   KG (Kilogram)                                  |");
+    Console.WriteLine( "8.  | HG (Hektogram)      ->   DAG (Dekagram)                                 |");
+    Console.WriteLine( "9.  | HG (Hektogram)      ->   G (gram)                                       |");
+    Console.WriteLine( "10. | HG (Hektogram)      ->   DG (Desigram)                                  |");
+    Console.WriteLine( "11. | HG (Hektogram)      ->   CG (Centigram)                                 |");
+    Console.WriteLine( "12. | HG (Hektogram)      ->   MG (Miligram)                                  |");
+    Console.WriteLine( "13. | DAG (Dekagram)      ->   KG (Kilogram)                                  |");
+    Console.WriteLine( "14. | DAG (Dekagram)      ->   HG (Hektogram)                                 |");
+    Console.WriteLine( "15. | DAG (Dekagram)      ->   G (gram)                                       |");
+    Console.WriteLine( "16. | DAG (Dekagram)      ->   DG (Desigram)                                  |");
+    Console.WriteLine( "17. | DAG (Dekagram)      ->   CG (Centigram)                                 |");
+    Console.WriteLine( "18. | DAG (Dekagram)      ->   MG (Miligram)                                  |");
+    Console.WriteLine( "19. | G (gram)            ->   KG (Kilogram)                                  |");
+    Console.WriteLine( "20. | G (gram)            ->   HG (Hektogram)                                 |");
+    Console.WriteLine( "21. | G (gram)            ->   DAG (Dekagram)                                 |");
+    Console.WriteLine( "22. | G (gram)            ->   DG (Desigram)                                  |");
+    Console.WriteLine( "23. | G (gram)            ->   CG (Centigram)                                 |");
+    Console.WriteLine( "24. | G (gram)            ->   MG (Milieter)                                   |");
+    Console.WriteLine( "25. | DG (Desigram)       ->   KG (Kilogram)                                  |");
+    Console.WriteLine( "26. | DG (Desigram)       ->   HG (Hektogram)                                 |");
+    Console.WriteLine( "27. | DG (Desigram)       ->   DAG (Dekagram)                                 |");
+    Console.WriteLine( "28. | DG (Desigram)       ->   G (gram)                                       |");
+    Console.WriteLine( "29. | DG (Desigram)       ->   CG (Centigram)                                 |");
+    Console.WriteLine( "30. | DG (Desigram)       ->   MG (Miligram)                                  |");
+    Console.WriteLine( "31. | CG (Centigram)      ->   KG (Kilogram)                                  |");
+    Console.WriteLine( "32. | CG (Centigram)      ->   HG (Hektogram)                                 |");
+    Console.WriteLine( "33. | CG (Centigram)      ->   DAG (Dekagram)                                 |");
+    Console.WriteLine( "34. | CG (Centigram)      ->   G (gram)                                       |");
+    Console.WriteLine( "35. | CG (Centigram)      ->   DG (Desigram)                                  |");
+    Console.WriteLine( "36. | CG (Centigram)      ->   MG (Miligram)                                  |");
+    Console.WriteLine( "37. | MG (Miligram)       ->   KG (Kilogram)                                  |");
+    Console.WriteLine( "38. | MG (Miligram)       ->   HG (Hektogram)                                 |");
+    Console.WriteLine( "39. | MG (Miligram)       ->   DAG (Dekagram)                                 |");
+    Console.WriteLine( "40. | MG (Miligram)       ->   G (gram)                                       |");
+    Console.WriteLine( "41. | MG (Miligram)       ->   DG (Desigram)                                  |");
+    Console.WriteLine( "42. | MG (Miligram)       ->   CG (Centigram)                                 |");
+    Console.WriteLine( "================================================================================");
+        }
+        static void Main(string[] args){
+                welcome();
+                tabel();
+
+                int n = 0, pil = 0, rumus = 0;
+                string j = "";
+
+
+
+do{
+                Console.WriteLine("Silakan pilih sesuai dengan tabel : ");
+                pil = int.Parse(Console.ReadLine());
+
+
+                switch (pil){
+                    case 1:
+                    Console.WriteLine("-------- 1.) KG -> HG --------");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                    case 2:
+                    Console.WriteLine("-------- 2.) KG -> DAG -------- ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+                     case 3:
+                    Console.WriteLine("------ 3.) KG -> M --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 1000;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+                    
+                     case 4:
+                    Console.WriteLine("------ 4.) KG -> DG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10000;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+                      case 5:
+                    Console.WriteLine("------ 5.) KG -> CG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100000;
+                    Console.WriteLine(n + " * 100000 = " + rumus );
+                    break;
+
+
+                    
+                      case 6:
+                    Console.WriteLine("------ 6.) KG -> MG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 1000000;
+                    Console.WriteLine(n + " * 1000000 = " + rumus );
+                    break;
+
+
+                       case 7:
+                    Console.WriteLine("------ 7.) HG -> KG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                      rumus = n / 10;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                     case 8:
+                    Console.WriteLine("------ 8.) HG -> DAG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                      rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+
+                        case 9:
+                    Console.WriteLine("------  9.) HG -> M --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100 ;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+                        case 10:
+                    Console.WriteLine("------10.) HG -> DG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 1000 ;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+
+                        case 11:
+                    Console.WriteLine("------ 11.) HG -> CG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                       rumus = n * 10000 ;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+                     case 12:
+                    Console.WriteLine("------- 12.) HG -> MG  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100000;
+                    Console.WriteLine(n + " * 100000 = " + rumus );
+                    break;
+
+
+                       case 13:
+                    Console.WriteLine("------- 13.) DAG -> KG  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                       rumus = n / 100 ;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+                      case 14:
+                    Console.WriteLine("------- 14.) DAG -> HG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                       rumus = n / 10 ;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                       case 15:
+                    Console.WriteLine("------- 15.) DAG -> M--------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                         case 16:
+                    Console.WriteLine("-------16.) DAG -> DG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 100 ;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+
+                      case 17:
+                    Console.WriteLine("------- 17.) DAG -> CG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 1000 ;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+
+                        case 18:
+                    Console.WriteLine("-------  18.) DAG -> MG  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 10000 ;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+                       case 19:
+                    Console.WriteLine("------- 19.) M -> KG  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                      rumus = n / 1000 ;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+
+                          case 20:
+                    Console.WriteLine("------- 20.) M -> HG  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100 ;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+
+                    
+                          case 21:
+                    Console.WriteLine("------- 21.) M -> DAG --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10 ;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                         case 22:
+                    Console.WriteLine("------- 22.) M -> DG  --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                     rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+
+                       case 23:
+                    Console.WriteLine("------- 23.) M -> CG   --------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 100 ;
+                    Console.WriteLine(n + " * 100 = " + rumus );
+                    break;
+
+
+
+
+                       case 24:
+                    Console.WriteLine("------- 24.) M -> MG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 1000 ;
+                    Console.WriteLine(n + " * 1000 = " + rumus );
+                    break;
+
+
+
+                        case 25:
+                    Console.WriteLine("------- 25.) DG -> KG---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10000 ;
+                    Console.WriteLine(n + " * 10000 = " + rumus );
+                    break;
+
+
+
+                        case 26:
+                    Console.WriteLine("------- 26.) DG -> HG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+                       case 27:
+                    Console.WriteLine("------- 27.) DG -> DAG  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n / 100 ;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+
+                     case 28:
+                    Console.WriteLine("------- 28.) DG -> M  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n / 10 ;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+
+                     case 29:
+                    Console.WriteLine("------- 29.) DG -> CG  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                      case 30:
+                    Console.WriteLine("------- 30.) DG -> MG  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                   rumus = n * 10 ;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                     case 31:
+                    Console.WriteLine("------- 31.) CG -> KG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100000;
+                    Console.WriteLine(n + " / 100000 = " + rumus );
+                    break;
+
+
+                      case 32:
+                    Console.WriteLine("------- 32.) CG -> HG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10000;
+                    Console.WriteLine(n + " / 10000 = " + rumus );
+                    break;
+
+
+                        case 33:
+                    Console.WriteLine("------- 33.) CG -> DAG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+                      case 34:
+                    Console.WriteLine("------- 34.) CG -> M ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+                      case 35:
+                    Console.WriteLine("------- 35.) CG -> DG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+                      case 36:
+                    Console.WriteLine("------- 36.) CG -> MG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n * 10;
+                    Console.WriteLine(n + " * 10 = " + rumus );
+                    break;
+
+
+                      case 37:
+                    Console.WriteLine("------- 37.) MG -> KG  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000000;
+                    Console.WriteLine(n + " / 1000000 = " + rumus );
+                    break;
+
+
+                     case 38:
+                    Console.WriteLine("------- 38.) MG -> HG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100000;
+                    Console.WriteLine(n + " / 100000 = " + rumus );
+                    break;
+
+
+                    
+                     case 39:
+                    Console.WriteLine("------- 39.) MG -> DAG  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10000;
+                    Console.WriteLine(n + " / 10000 = " + rumus );
+                    break;
+
+
+
+                        case 40:
+                    Console.WriteLine("------- 40.) MG -> M ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 1000;
+                    Console.WriteLine(n + " / 1000 = " + rumus );
+                    break;
+
+
+                      case 41:
+                    Console.WriteLine("------- 41.) MG -> DG  ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 100;
+                    Console.WriteLine(n + " / 100 = " + rumus );
+                    break;
+
+
+                       case 42:
+                    Console.WriteLine("------- 42.) MG -> CG ---------  ");
+                    Console.WriteLine("masukkan angka : ");
+                    n = int.Parse(Console.ReadLine());
+                    rumus = n / 10;
+                    Console.WriteLine(n + " / 10 = " + rumus );
+                    break;
+
+
+                    default:
+                    Console.WriteLine("pilihan tidak valid");
+                    break;
+                }
+                Console.WriteLine("----------------------------------------------------");
+Console.WriteLine("Ingin coba program lagi ? [Y/N] : ");
+j = Console.ReadLine();
+        }while ( j == "y" || j == "Y");
+        Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        Console.WriteLine("Terima kasih telah menggunakan program ini");
+        Console.WriteLine("made by ikkoc_awinata");
+    }
+    
+}
+}

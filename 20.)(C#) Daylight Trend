@@ -1,0 +1,62 @@
+using System;
+
+namespace daylight{
+    class Program{
+
+        static void welcome(){
+            Console.WriteLine("===============================================================");
+            Console.WriteLine("      S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("                    DAYLIGHT TREND");
+            Console.WriteLine("                      BAHASA C#");
+            Console.WriteLine("===============================================================");
+        }
+        static void Main(string[] args){
+            welcome();
+
+            int x = 20;
+            string j = " ";
+
+               
+            Console.WriteLine("and i can still see it all");
+            j = Console.ReadLine();
+            Console.WriteLine("");
+            x = 20;
+
+            while ( x > 0){
+                x -=1;
+                Console.WriteLine("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+            }
+            Console.WriteLine("==========================================================================================================");
+            Console.WriteLine("");
+
+
+            j = Console.ReadLine();
+            Console.WriteLine("all of you, all of me ");
+            j = Console.ReadLine();
+            Console.WriteLine("");
+                 x = 20;
+
+            while ( x > 0){
+                x -=1;
+                Console.WriteLine("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+            }
+             Console.WriteLine("==========================================================================================================");
+            Console.WriteLine("");
+
+
+            j = Console.ReadLine();
+            Console.WriteLine("i once believed love would be ");
+            j = Console.ReadLine();
+            Console.WriteLine("");
+                 x = 20;
+
+            while ( x > 0){
+                x -=1;
+                Console.WriteLine("A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A A");
+            }
+             Console.WriteLine("==========================================================================================================");
+            Console.WriteLine("");
+
+        }
+    }
+}

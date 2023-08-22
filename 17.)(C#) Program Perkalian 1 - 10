@@ -1,0 +1,31 @@
+using System;
+
+namespace perkalian1_10{
+    class Program{
+
+        static void welcome(){
+            Console.WriteLine("================================================================");
+            Console.WriteLine("       S E L A M A T  D A T A N G  D I  P R O G R A M");
+            Console.WriteLine("               PERKLAIAN 1 - 10 ( LOOP FOR )");
+            Console.WriteLine("                        BAHASA C#");
+            Console.WriteLine("================================================================");
+
+        }
+
+        static void Main(string[] args) {
+            Console.WriteLine("");
+            welcome();
+            int i = 0, j = 0;
+            
+
+
+            for ( i = 1; i <= 10 ; i++){
+                string rowString = "";
+                for( j =1; j<=10; j++){
+                   rowString += $"{i * j} | ";
+                }
+                Console.WriteLine($"\n{rowString}");
+            }
+        }
+    }
+}
